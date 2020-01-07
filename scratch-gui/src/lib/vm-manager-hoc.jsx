@@ -14,6 +14,8 @@ import {
     projectError
 } from '../reducers/project-state';
 
+import { loadProjectByUrl } from 'scratch3-hacks';
+
 /*
  * Higher Order Component to manage events emitted by the VM
  * @param {React.Component} WrappedComponent component to manage VM events for
@@ -38,6 +40,7 @@ const vmManagerHOC = function (WrappedComponent) {
             if (!this.props.isPlayerOnly && !this.props.isStarted) {
                 this.props.vm.start();
             }
+            loadProjectByUrl(this.props);
         }
         componentDidUpdate (prevProps) {
             // if project is in loading state, AND fonts are loaded,

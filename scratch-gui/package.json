@@ -39,7 +39,7 @@
     }
   },
   "dependencies": {
-    "extension": "~0.1.0"
+    "scratch3-hacks": "~0.1.0"
   },
   "peerDependencies": {
     "react": "^16.0.0",

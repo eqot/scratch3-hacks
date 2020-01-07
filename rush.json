@@ -371,11 +371,8 @@
       "projectFolder": "scratch-vm"
     },
     {
-      "packageName": "extension",
-      "projectFolder": "extension",
-      "cyclicDependencyProjects": [
-        "scratch-vm"
-      ]
+      "packageName": "scratch3-hacks",
+      "projectFolder": "scratch3-hacks"
     }
   ]
 }
